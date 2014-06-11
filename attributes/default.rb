@@ -18,7 +18,7 @@
 default[:consul][:base_url] = 'https://dl.bintray.com/mitchellh/consul/'
 default[:consul][:version] = '0.2.1'
 default[:consul][:install_method] = 'binary'
-default[:consul][:install_dir] = '/usr/local/bin'
+default[:consul][:install_dir] = '/mnt/apps/consul'
 default[:consul][:checksums] = {
   '0.2.1_darwin_amd64' => '5c9a952daf1f0ff3c11df5eacf87a03b67dabadf4a1a577f37af2ca6d3bfc7b6',
   '0.2.1_linux_386' => 'e95aee133c9a543769dbad3a8fa555863d8b2a2230ea0b15d72379aab532d4fc',
@@ -39,5 +39,5 @@ default[:consul][:service_group] = 'consul'
 
 # UI attributes
 default[:consul][:client_addr] = '0.0.0.0'
-default[:consul][:ui_dir] = '/var/lib/consul/ui'
+default[:consul][:ui_dir] = '/mnt/apps/consul/ui'
 default[:consul][:serve_ui] = false
